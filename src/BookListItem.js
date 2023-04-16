@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Card from 'react-bootstrap/Card';
 import CommentList from './CommentList';
+//import CommentListItem from './CommentListItem';
 
 
 class MyBookCard extends Component {
@@ -15,20 +16,20 @@ class MyBookCard extends Component {
 
   render(){
   return (
-   
+ 
     <Card className="col-md-4">
       <Card.Img variant="top" src={this.props.item.img} />
       <Card.Body>
         <Card.Title>{this.props.item.title}</Card.Title>
         <Card.Text>
-         {this.props.item.category} - ${this.props.item.price} 
+                  {this.props.item.category} - ${this.props.item.price} 
           <CommentList comments={this.state.comments} />
         </Card.Text>
         <CommentList comments={this.state.comments} bookId={this.props.bookInfo.asin}
         onNewComment={this.onNewComment}
         updateComment={this.updateComment} />
       </Card.Body>
-    </Card>
+       </Card>
   )
 }
 /*
