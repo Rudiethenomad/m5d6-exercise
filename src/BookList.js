@@ -1,6 +1,7 @@
 //import React from 'react';
 import React, { Component, Row } from 'react';
-
+import CommentList from './CommentList';
+import CommentListItem from './CommentListItem';
 import books from "./scifi.json";
 import BookListItem from "./BookListItem";
 import MyNav from "./MyNav";

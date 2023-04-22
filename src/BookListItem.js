@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 
 import Card from 'react-bootstrap/Card';
 import CommentList from './CommentList';
+import CommentListItem from './CommentListItem';
+
 //import CommentListItem from './CommentListItem';
 
 
-class MyBookCard extends Component {
+class BookListItem extends Component {
   state = {
     comments: []
 
@@ -52,4 +54,6 @@ need to get authorization code from link in assignment
 
 
 }
-export default MyBookCard;
+export default BookListItem;
+
+
